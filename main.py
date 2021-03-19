@@ -9,10 +9,13 @@ from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QPushButton, QLa
 from PyQt5.QtCore import Qt, QRect, pyqtSignal, QPoint
 from PyQt5.QtGui import QColor, QIcon, QPainter, QEnterEvent, QPen, QFont
 
-from your_widget import ContainWidget
-
 
 Left, Top, Right, Bottom, LeftTop, RightTop, LeftBottom, RightBottom = range(8)
+
+
+class ContainWidget(QWidget):
+    """创建你的内容窗口"""
+    pass
 
 
 def read_qss(style):
